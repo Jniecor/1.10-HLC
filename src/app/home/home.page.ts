@@ -7,6 +7,28 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  num1: number;
+  num2: number;
+  total: number;
+
+  constructor() {
+
+  }
+
+  suma(){
+
+    if(this.num1 || this.num2){
+      this.total = this.num1 + this.num2;
+    } 
+
+  }
+
+  reinicia() {
+
+    //Reiniciamos las variables.
+    this.num1 = null;
+    this.num2 = null;
+    this.total = 0;
+  }
 
 }

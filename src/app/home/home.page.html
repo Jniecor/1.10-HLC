@@ -1,20 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Suma de 2 números
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div class="ion-padding">
+    <ion-input type="number"
+    [(ngModel)]="num1" placeholder="Introduce un número">
+    </ion-input>
+    <ion-input type="number"
+    [(ngModel)]="num2" placeholder="Introduce otro número">
+    </ion-input>
+    <p>La suma de los dos números es {{total}}</p>
+    <ion-button expand="block" (click)="suma()">Sumar</ion-button>
+    <ion-button expand="block" (click)="reinicia()">Borrar</ion-button>
   </div>
 </ion-content>
