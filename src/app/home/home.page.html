@@ -1,21 +1,25 @@
-<ion-header [translucent]="true">
+<ion-header  [translucent]="true" class="fondo">
   <ion-toolbar>
     <ion-title>
-      Suma de 2 números
+      Suma de 2 números. <p class ="landscape">Estás modo landscape.</p>
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <div class="ion-padding">
-    <ion-input type="number"
-    [(ngModel)]="num1" placeholder="Introduce un número">
-    </ion-input>
-    <ion-input type="number"
-    [(ngModel)]="num2" placeholder="Introduce otro número">
-    </ion-input>
+    <div class="input">
+      <ion-input  type="number"
+      [(ngModel)]="num1" placeholder="Introduce un número">
+      </ion-input>
+      <ion-input type="number"
+      [(ngModel)]="num2" placeholder="Introduce otro número">
+      </ion-input>
+    </div>
     <p>La suma de los dos números es {{total}}</p>
-    <ion-button expand="block" (click)="suma()">Sumar</ion-button>
-    <ion-button expand="block" (click)="reinicia()">Borrar</ion-button>
+    <div class="boton">
+      <ion-button expand="block" (click)="suma()" class="boton">Sumar</ion-button>
+      <ion-button expand="block" (click)="reinicia()" class="boton">Borrar</ion-button>
+    </div>
   </div>
 </ion-content>

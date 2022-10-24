@@ -25,3 +25,174 @@
 #container a {
   text-decoration: none;
 }
+
+@media only screen and (max-width: 4000px){
+
+  ion-header{
+
+    --background: #45B39D ;
+  
+  }
+
+  ion-content{
+
+    --background: #45B39D;
+  
+  }
+  
+  ion-toolbar{
+
+    --background: #45B39D;
+
+  }
+
+  ion-title{
+    --background: #45B39D;
+    --color: white;
+  }
+
+  ion-button{
+    --background: #117A65;
+    --color: white;
+  }
+
+  p {
+  
+    color: white;
+  
+  }
+  
+  ion-input {
+  
+    background-color: #117A65;
+    color: white;
+    
+  }
+
+  .landscape{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 800px) {
+  ion-header{
+
+    --background: white;
+  
+  }
+
+  ion-content{
+
+    --background: white;
+  
+  }
+  
+  ion-toolbar{
+
+    --background: white;
+
+  }
+
+  ion-title{
+    --background: white;
+    --color: black;
+  }
+
+  ion-button{
+    --background: #2874A6;
+    --color: white;
+  }
+
+  p {
+  
+    color: black;
+  
+  }
+  
+  ion-input {
+  
+    background-color: white;
+    color: black;
+    
+  }
+
+  .landscape{
+    display: none;
+  }
+
+}
+
+@media only screen and (max-width: 420px) {
+
+  ion-header{
+
+    --background: black;
+  
+  }
+
+  ion-content{
+
+    --background: black;
+  
+  }
+
+  ion-toolbar{
+
+    --background: black;
+
+  }
+
+  ion-title{
+    background-color: black;
+    color: white;
+  }
+
+  ion-button{
+    --background: white;
+    --color: black;
+  }
+  
+  p {
+  
+    color: white;
+  
+  }
+  
+  ion-input {
+  
+    background-color: gray;
+    color: white;
+    
+  }
+
+  .landscape{
+    display: none;
+  }
+}
+
+@media only screen and (orientation: landscape) {
+
+  
+  ion-input{
+
+    margin: 1%;
+
+  }
+  .landscape{
+    
+    display: contents;
+    
+  }
+
+  .boton{
+    display: flex;
+    justify-content: center;
+  }
+
+  .input{
+    display: flex;
+    justify-content: center;
+  }
+
+}
